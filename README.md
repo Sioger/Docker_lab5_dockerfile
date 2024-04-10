@@ -53,7 +53,7 @@ cd C:\Users\Sioger\Documents\GitHub\Docker_lab5_dockerfile
 
 If you need to edit any configuration files or make any changes, now is the time.
 
-Save all changes if files were edited, then run the command to build a new image with Dockerfile named scratch-node-nginx-mix:
+Save all changes if files were edited, then run the command to build a new image with Dockerfile named simple:
 
 ```cmd
 docker build -t simple .
@@ -64,7 +64,7 @@ Example result from this command:
 
 ## Container Setup and Running
 
-To create a container with the scratch-node-nginx-mix image, specify the modes it will run in (-d in this case), ports (-p portOnYourHostMachine:PortOnApacheServer(80 default for this image)), the name of the container (--name nginx-server in this case) and any additional options that will be needed. The example command below demonstrates how to create a container with the scratch-node-nginx-mix image.
+The example command below demonstrates how to create a container with alpine.
 
 ```cmd
 docker run -it -p 3000:3000 simple 
